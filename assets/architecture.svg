@@ -1,0 +1,17 @@
+<!-- SVG simples - abra no browser para ver o diagrama hierárquico -->
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="300" y="50" width="200" height="60" fill="#4F46E5" rx="8"/>
+  <text x="400" y="85" text-anchor="middle" fill="white" font-weight="bold" font-size="18">Meta-Planner (Nível 1)</text>
+  
+  <rect x="100" y="180" width="200" height="60" fill="#10B981" rx="8"/>
+  <text x="200" y="215" text-anchor="middle" fill="white" font-weight="bold">Loop-Manager</text>
+  
+  <rect x="500" y="180" width="200" height="60" fill="#10B981" rx="8"/>
+  <text x="600" y="215" text-anchor="middle" fill="white" font-weight="bold">Swarm Execution</text>
+  
+  <rect x="300" y="310" width="200" height="60" fill="#F59E0B" rx="8"/>
+  <text x="400" y="345" text-anchor="middle" fill="white" font-weight="bold">Validator + Optimizer</text>
+  
+  <rect x="300" y="420" width="200" height="60" fill="#8B5CF6" rx="8"/>
+  <text x="400" y="455" text-anchor="middle" fill="white" font-weight="bold">Evolver (Nível 5)</text>
+</svg>

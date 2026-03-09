@@ -1,0 +1,4 @@
+state/
+evolution/
+*.log
+.DS_Store

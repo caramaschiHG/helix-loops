@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  HELIX GSD Phase Template
+  Auto-evolved by Evolver. Do not edit manually.
+  Populated at runtime by Meta-Planner with goal-specific phases.
+-->
+<helix-phases goal="{{GOAL}}" generated="{{DATE}}" strategy="{{STRATEGY}}">
+
+  <!--
+    PHASE TEMPLATE SPEC:
+    id:          unique kebab-case identifier, e.g. "phase-01-scaffold"
+    wave:        which parallel wave this belongs to (integer)
+    model:       "sonnet" | "opus" — routing decision by Meta-Planner
+    type:        planning | execution | critical-code | verification
+    parallel:    true if can run alongside siblings in same wave
+
+    Skills called per phase (in order):
+      1. gsd:plan-phase     → generates task breakdown
+      2. gsd:execute-phase  → executes tasks with atomic commits
+      3. gsd:verify-work    → goal-backward verification
+
+    Rollback tag format: helix/{{id}}/pre
+    Worker branch format: helix/{{id}}/{{task-slug}}
+  -->
+
+  <phase id="phase-01-scaffold" wave="1" model="sonnet" type="execution" parallel="false">
+    <name>Project Scaffold</name>
+    <description>Initialize repo structure, tooling, CI config, env setup</description>
+    <skills>
+      <skill>gsd:plan-phase</skill>
+      <skill>gsd:execute-phase</skill>
+      <skill>gsd:verify-work</skill>
+    </skills>
+    <acceptance-criteria>
+      <criterion>Project runs with `npm run dev` without errors</criterion>
+      <criterion>All dependencies installed and locked</criterion>
+      <criterion>CI pipeline file present and valid</criterion>
+      <criterion>README.md updated with setup instructions</criterion>
+    </acceptance-criteria>
+    <rollback-tag>helix/phase-01-scaffold/pre</rollback-tag>
+  </phase>
+
+  <!-- Additional phases populated by Meta-Planner at runtime -->
+  <!-- Example critical-code phase: -->
+  <!--
+  <phase id="phase-02-auth" wave="2" model="opus" type="critical-code" parallel="false">
+    <name>Authentication System</name>
+    <description>JWT auth, session management, password hashing, RBAC</description>
+    <skills>
+      <skill>gsd:plan-phase</skill>
+      <skill>gsd:execute-phase</skill>
+      <skill>gsd:verify-work</skill>
+    </skills>
+    <acceptance-criteria>
+      <criterion>Register, login, logout flows work end-to-end</criterion>
+      <criterion>JWT tokens expire and refresh correctly</criterion>
+      <criterion>Passwords hashed with bcrypt (cost >= 12)</criterion>
+      <criterion>Auth middleware protects all private routes</criterion>
+      <criterion>Auth tests pass: npm test -- --grep auth</criterion>
+    </acceptance-criteria>
+    <rollback-tag>helix/phase-02-auth/pre</rollback-tag>
+  </phase>
+  -->
+
+  <!-- Evolver appends learned acceptance-criteria patterns here: -->
+  <evolver-patterns>
+    <!-- populated after first successful run -->
+  </evolver-patterns>
+
+</helix-phases>
