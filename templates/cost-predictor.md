@@ -15,6 +15,9 @@ Evolver multiplies each by its calibration factor after each run.
 | verification (sonnet) | 10,000 | 1.00 | 10,000 |
 | debugging (sonnet) | 25,000 | 1.00 | 25,000 |
 | evolution (sonnet) | 8,000 | 1.00 | 8,000 |
+| memory-sync (flash) | 5,000 | 1.00 | 5,000 |
+| adversarial-review (sonnet) | 35,000 | 1.00 | 35,000 |
+| multi-platform-export (flash) | 2,000 | 1.00 | 2,000 |
 
 ## Pricing Reference (as of 2026-03-09)
 

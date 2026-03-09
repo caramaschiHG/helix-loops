@@ -6,7 +6,17 @@
 
 set -euo pipefail
 
-HELIX_HOME="${HOME}/.claude/skills/helix"
+# Detect HELIX_HOME: prefer local .helix directory if it exists, otherwise use global home
+if [[ -d "$(pwd)/.helix" ]]; then
+  HELIX_ROOT="$(pwd)"
+  HELIX_HOME="${HELIX_ROOT}/.helix"
+  # Some scripts are in project root/scripts, others in .helix/scripts
+  SCRIPT_DIR="${HELIX_ROOT}/scripts"
+else
+  HELIX_HOME="${HOME}/.claude/skills/helix"
+  SCRIPT_DIR="${HELIX_HOME}/scripts"
+fi
+
 STATE_DIR="${HELIX_HOME}/state"
 CONFIG="${HELIX_HOME}/helix.config.json"
 
@@ -108,6 +118,18 @@ cmd_history() {
   grep -A 3 "Calibration History" "${HELIX_HOME}/templates/cost-predictor.md" 2>/dev/null || true
 }
 
+cmd_memory() {
+  "${SCRIPT_DIR}/helix-memory.sh" "$@"
+}
+
+cmd_pr() {
+  "${SCRIPT_DIR}/helix-pr-gen.sh" "$@"
+}
+
+cmd_export() {
+  "${SCRIPT_DIR}/helix-export.sh" "$@"
+}
+
 cmd_dry_run() {
   local goal="${1:-}"
   echo "HELIX dry-run (no execution)"
@@ -184,11 +206,14 @@ main() {
     status)      cmd_status ;;
     cancel)      cmd_cancel ;;
     history)     cmd_history ;;
+    memory)      cmd_memory "$@" ;;
+    pr)          cmd_pr "$@" ;;
+    export)      cmd_export "$@" ;;
     dry-run)     cmd_dry_run "$@" ;;
     rollback)    cmd_rollback "$@" ;;
     checkpoint)  cmd_checkpoint "$@" ;;
     help|--help)
-      echo "HELIX Orchestrator v1.0.0"
+      echo "HELIX Orchestrator v3.0"
       echo ""
       echo "Commands:"
       echo "  init <goal>      Start new run"
@@ -197,6 +222,9 @@ main() {
       echo "  cancel           Stop safely"
       echo "  dry-run <goal>   Cost estimate only"
       echo "  history          Show evolution logs"
+      echo "  memory <cmd>     Manage persistent memory"
+      echo "  pr <cmd>         Generate PR and adversarial review"
+      echo "  export <cmd>     Export orchestration spec"
       echo "  rollback <phase> Git rollback to pre-phase tag"
       echo "  checkpoint <id>  Create git checkpoint tag"
       ;;

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# HELIX Centralized Observability & Analytics (v2.1)
+# HELIX Centralized Observability & Analytics (v3.0)
 # Collects, aggregates, and displays execution metrics and token savings.
 
 set -euo pipefail
@@ -42,7 +42,7 @@ log_execution() {
 # ─── Analytics Dashboard ──────────────────────────────────────────────────────
 
 show_analytics() {
-  echo -e "${CYAN}${BOLD}🔬 HELIX Centralized Observability (v2.1)${RESET}"
+  echo -e "${CYAN}${BOLD}🔬 HELIX Centralized Observability (v3.0)${RESET}"
   echo -e "${DIM}Aggregating historical data from: $LOG_FILE${RESET}\n"
 
   if [[ ! -s "$LOG_FILE" ]]; then

@@ -1,0 +1,19 @@
+{
+  "version": "3.0.0",
+  "project": "helix-orchestrator",
+  "goal": "Develop HELIX v3.0 (Ecosystem & Enterprise Update)",
+  "current_context": {
+    "phase": "v3.0-testing-and-validation",
+    "status": "ready_for_external_orchestration"
+  },
+  "adapters": {
+    "cursor": {
+      "command": "composer:run",
+      "steps": ["scaffold", "implement", "verify"]
+    },
+    "aider": {
+      "command": "aider --architect",
+      "auto_commit": true
+    }
+  }
+}

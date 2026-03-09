@@ -1,13 +1,12 @@
 <div align="center">
 
 <pre>
-██╗  ██╗ ███████╗ ██╗      ██╗ ██╗  ██╗
-██║  ██║ ██╔════╝ ██║      ██║ ╚██╗██╔╝
-███████║ █████╗   ██║      ██║  ╚███╔╝ 
-██╔══██║ ██╔══╝   ██║      ██║  ██╔██╗ 
-██║  ██║ ███████╗ ███████╗ ██║ ██╔╝ ██╗
-╚═╝  ╚═╝ ╚══════╝ ╚══════╝ ╚═╝ ╚═╝  ╚═╝
-
+ ██╗  ██╗  ███████╗  ██╗       ██╗  ██╗  ██╗ 
+ ██║  ██║  ██╔════╝  ██║       ██║  ╚██╗██╔╝ 
+ ███████║  █████╗    ██║       ██║   ╚███╔╝  
+ ██╔══██║  ██╔══╝    ██║       ██║   ██╔██╗  
+ ██║  ██║  ███████╗  ███████╗  ██║  ██╔╝ ██╗ 
+ ╚═╝  ╚═╝  ╚══════╝  ╚══════╝  ╚═╝  ╚═╝  ╚═╝ 
 </pre>
 
 **Hierarchical Evolutionary Loop for Intelligent eXecution**
@@ -26,7 +25,7 @@
 
 Welcome to the next generation of autonomous AI agents. If you've used **GSD** or **Ralph Loops**, you know the immense power of autonomous execution. But they share a fatal flaw: **they don't learn.** Every time you start a new loop, you start from zero.
 
-**HELIX v2.1** introduces the **Hierarchical Evolutionary Loop**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
+**HELIX v3.0** introduces the **Hierarchical Evolutionary Loop**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
 
 ⚡ **Now featuring native MCP integration, Prompt Caching (-60% cost), Agentic Self-Healing, Git Worktrees, and Centralized Observability.**
 
@@ -34,7 +33,7 @@ Welcome to the next generation of autonomous AI agents. If you've used **GSD** o
 
 ## 🥊 The Evolution of Loops (Why HELIX?)
 
-| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v2.1** |
+| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v3.0** |
 | :--- | :---: | :---: | :---: |
 | **Execution Architecture** | Sequential | Parallel Waves | **Hierarchical Swarm** |
 | **Self-Evolution** | ❌ No | ❌ No | **✅ Yes (Level 5 Evolver)** |
