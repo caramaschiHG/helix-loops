@@ -5,15 +5,17 @@ All notable changes to the HELIX framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v2.1.0] - Upcoming (The Infrastructure Update)
-- **Planned:** Visual Terminal Dashboard (`helix-dashboard`)
-- **Planned:** Isolated Git Worktrees for true multi-agent collision safety
-- **Planned:** Advanced Hooks & Total Auto-Activation
-- **Planned:** Centralized Observability & Logging (`helix-logs`)
+## [v2.1.0] - March 2026 (The Infrastructure Update)
+
+### Added
+- **Centralized Observability (`helix-logs.sh`):** A new dashboard that tracks lifetime success rates, total tokens burned, and calculates actual dollar amounts saved via Prompt Caching.
+- **Advanced Hooks & Auto-Activation (`install-hooks.sh`):** HELIX now binds directly to Git. The L4 Validator automatically runs on `pre-commit` (with auto-healing), and the L5 Evolver triggers autonomously on `post-merge`.
+- **Isolated Git Worktrees (`worktree-manager.sh`):** Swarm agents now execute in dedicated physical worktrees, guaranteeing zero merge conflicts during massive parallel execution waves.
+- **Visual Terminal Dashboard (`helix-dashboard.sh`):** A premium, real-time visual UI for monitoring parallel workers, costs, and active logs.
 
 ## [v2.0.0] - March 2026 (The Premium & Intelligence Update)
 
-### Added (Market-Dominating Features)
+### Added
 - **Premium UX Redesign:** Utterly elegant terminal UI. Noisy logs replaced with clean ASCII banners, markdown borders, and calm, professional messaging templates.
 - **MCP Native Integration:** Swarm Execution (Level 3) agents now automatically bind to Model Context Protocol (MCP) servers (Postgres, GitHub, Linear, etc.) for zero-hallucination data gathering.
 - **Prompt Caching:** Loop-Manager now utilizes provider-level prompt caching, reducing token costs by up to 60% on long-running waves.

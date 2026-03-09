@@ -14,7 +14,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/caramaschiHG/helix-loops?style=for-the-badge&color=ffd700)](https://github.com/caramaschiHG/helix-loops/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Version 2.0.0](https://img.shields.io/badge/version-2.0.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
+[![Version 2.1.0](https://img.shields.io/badge/version-2.1.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
 [![Compatible with: Claude Code & Gemini CLI](https://img.shields.io/badge/Compatible-Claude_Code_%7C_Gemini_CLI-blueviolet?style=for-the-badge&logo=anthropic)](https://github.com/caramaschiHG/helix-loops)
 [![MCP Native Support](https://img.shields.io/badge/MCP-Native_Support-orange?style=for-the-badge)](https://modelcontextprotocol.io)
 
@@ -26,24 +26,24 @@
 
 Welcome to the next generation of autonomous AI agents. If you've used **GSD** or **Ralph Loops**, you know the immense power of autonomous execution. But they share a fatal flaw: **they don't learn.** Every time you start a new loop, you start from zero.
 
-**HELIX v2.0** introduces the **Hierarchical Evolutionary Loop**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
+**HELIX v2.1** introduces the **Hierarchical Evolutionary Loop**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
 
-⚡ **Now featuring native MCP integration, Prompt Caching (-60% cost), Agentic Self-Healing, Context Compression, and a Premium CLI UX.**
+⚡ **Now featuring native MCP integration, Prompt Caching (-60% cost), Agentic Self-Healing, Git Worktrees, and Centralized Observability.**
 
 ---
 
 ## 🥊 The Evolution of Loops (Why HELIX?)
 
-| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v2.0** |
+| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v2.1** |
 | :--- | :---: | :---: | :---: |
 | **Execution Architecture** | Sequential | Parallel Waves | **Hierarchical Swarm** |
 | **Self-Evolution** | ❌ No | ❌ No | **✅ Yes (Level 5 Evolver)** |
 | **MCP Integration** | ❌ No | ❌ No | **✅ Native Support** |
 | **Cost Efficiency** | Standard | Standard | **✅ Prompt Caching Built-in (-60% cost)** |
-| **Model Routing** | ❌ Fixed | ❌ Fixed | **✅ Dynamic (Cost vs Quality)** |
+| **Parallel Safety** | ❌ No | ⚠️ Branches | **✅ Isolated Git Worktrees** |
 | **Style Learning** | ❌ None | ❌ Manual | **✅ Auto-generates `.helix/learned_rules.md`** |
 | **Failure Recovery** | ⚠️ Retry | ✅ Checkpoints | **✅ Agentic Self-Healing** |
-| **CLI Experience** | Basic | Basic | **✅ Premium Dashboard & Elegant UX** |
+| **CLI Experience** | Basic | Basic | **✅ Premium Dashboard & Logs** |
 
 ---
 
@@ -74,7 +74,7 @@ Initialize HELIX in your project and watch it build a full SaaS prototype in one
 > **The HELIX Workflow:**
 > 1. 🧠 **Meta-Planner:** Analyzes context via Compression and breaks down the task.
 > 2. ⚡ **Loop-Manager:** Schedules parallel waves leveraging Prompt Caching.
-> 3. 🛠️ **Swarm Execution:** Multiple agents code simultaneously, reading data via MCP tools.
+> 3. 🛠️ **Swarm Execution:** Multiple agents code simultaneously, reading data via MCP tools in *isolated worktrees*.
 > 4. 🛡️ **Validator:** Tests the code. If it fails, the *Agentic Healer* kicks in autonomously.
 > 5. 🔥 **Evolver:** Optimizes future runs based on this exact execution.
 
@@ -91,7 +91,7 @@ HELIX abandons the traditional loop for a **5-Level Hierarchical Swarm**:
 [ Level 2: Loop-Manager ]  --> Orchestrates parallel execution waves with Context Compression.
           |
           v
-[ Level 3: Swarm Execution] -> Does the actual coding via MCP and specific tools.
+[ Level 3: Swarm Execution] -> Does the actual coding via MCP and isolated git worktrees.
           |
           v
 [ Level 4: Validator ]     --> Tests, lints, checks architectural integrity, and Auto-Heals.
@@ -118,9 +118,9 @@ After 5 runs in your codebase, HELIX will have perfectly adapted to your exact c
 
 ## 💎 Premium CLI Experience
 
-HELIX v2.0 isn't just smart; it's beautiful. We've replaced noisy, scary JSON dumps with an elegant, terminal-native UI. All outputs feature clean borders, minimal elegant emojis, and precise status updates. 
+HELIX v2.1 isn't just smart; it's beautiful. We've replaced noisy, scary JSON dumps with an elegant, terminal-native UI. All outputs feature clean borders, minimal elegant emojis, and precise status updates. 
 
-Run `/helix:status` anytime to see a gorgeous real-time dashboard of your swarm's progress and token costs.
+Run `./scripts/helix-dashboard.sh` anytime to see a gorgeous real-time dashboard of your swarm's progress and token costs, or `./scripts/helix-logs.sh show` for a lifetime ROI breakdown.
 
 ---
 
@@ -139,11 +139,11 @@ Run `/helix:status` anytime to see a gorgeous real-time dashboard of your swarm'
 
 We are on a mission to be the undisputed #1 orchestration engine. See our full [ROADMAP.md](./ROADMAP.md) for details.
 
-### Upcoming in v2.1 (Infrastructure Update)
-- [ ] Visual Terminal Dashboard (`helix-dashboard`)
-- [ ] Isolated Git Worktrees for true multi-agent collision safety *(Beta available in scripts/)*
-- [ ] Advanced Hooks & Total Auto-Activation
-- [ ] Centralized Observability & Logging (`helix-logs`)
+### Completed in v2.1 (Infrastructure Update)
+- [x] Visual Terminal Dashboard (`helix-dashboard`)
+- [x] Isolated Git Worktrees for true multi-agent collision safety
+- [x] Advanced Hooks & Total Auto-Activation
+- [x] Centralized Observability & Logging (`helix-logs`)
 
 ### Upcoming in v3.0 (Ecosystem Update)
 - [ ] Persistent Vector DB Memory (Cross-Session)
