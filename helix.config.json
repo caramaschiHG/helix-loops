@@ -1,22 +1,21 @@
 {
-  "default_workers": 3,
-  "max_workers": 6,
-  "cost_ceiling_usd": 10.0,
-  "cost_warn_threshold_usd": 5.0,
-  "model_routing": {
-    "planning": "gemini-2.5-flash",
-    "execution": "gemini-2.5-flash",
-    "critical_code": "gemini-2.5-pro",
-    "verification": "gemini-2.5-flash",
-    "debugging": "gemini-2.5-flash",
-    "evolution": "gemini-2.5-flash"
+  "version": "2.0.0",
+  "project_name": "helix-orchestrator",
+  "execution": {
+    "default_model": "claude-3-7-sonnet",
+    "fast_model": "gemini-2.5-flash",
+    "max_parallel_waves": 5,
+    "enable_prompt_caching": true,
+    "enable_mcp": true
   },
-  "auto_evolve": true,
-  "auto_commit_evolution": true,
-  "checkpoint_interval": "per_phase",
-  "test_gate": true,
-  "rollback_on_failure": true,
-  "max_retries_per_wave": 1,
-  "worker_timeout_minutes": 45,
-  "evolution_commit_message_prefix": "helix: auto-evolution"
+  "evolver": {
+    "enabled": true,
+    "auto_update_templates": true,
+    "learn_from_git_diffs": true
+  },
+  "safety": {
+    "cost_ceiling_usd": 10.0,
+    "auto_healing_retries": 1,
+    "rollback_on_failure": true
+  }
 }

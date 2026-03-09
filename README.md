@@ -1,33 +1,36 @@
 <div align="center">
 
-# 🧬 HELIX
+# 🧬 HELIX v2.0
 
 **The First Self-Evolving AI Skill for Claude Code and Gemini CLI**
 
 [![GitHub stars](https://img.shields.io/github/stars/caramaschiHG/helix-loops?style=for-the-badge&color=yellow)](https://github.com/caramaschiHG/helix-loops/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
 [![Compatible with: Claude Code & Gemini CLI](https://img.shields.io/badge/Compatible-Claude_Code_%7C_Gemini_CLI-blueviolet?style=for-the-badge&logo=anthropic)](https://github.com/caramaschiHG/helix-loops)
+[![MCP Ready](https://img.shields.io/badge/MCP-Native_Support-orange?style=for-the-badge)](https://modelcontextprotocol.io)
 
 </div>
 
 Welcome to the next generation of autonomous AI agents. If you've used GSD or Ralph Loops, you know the power of autonomous execution. But they share a fatal flaw: **they don't learn.**
 
-**HELIX** introduces the **Hierarchical Evolutionary Loop for Intelligent eXecution**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase.
+**HELIX v2.0** introduces the **Hierarchical Evolutionary Loop for Intelligent eXecution**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
+
+⚡ **v2.0 introduces native MCP integration, Prompt Caching, Agentic Healing, and Context Compression.**
 
 ---
 
 ## 🥊 Why HELIX? (The Evolution of Loops)
 
-| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX** |
+| Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v2.0** |
 | :--- | :---: | :---: | :---: |
 | **Execution Style** | Sequential | Parallel Waves | **Hierarchical Swarm** |
 | **Self-Evolution** | ❌ No | ❌ No | **✅ Yes (Level 5 Evolver)** |
-| **Cost Prediction** | ❌ None | ⚠️ Basic | **✅ Adaptive / ML-based** |
+| **MCP Integration** | ❌ No | ❌ No | **✅ Native Support** |
+| **Cost Efficiency** | Standard | Standard | **✅ Prompt Caching Built-in** |
 | **Model Routing** | ❌ Fixed | ❌ Fixed | **✅ Dynamic (Cost vs Quality)** |
-| **Style Learning** | ❌ None | ❌ Manual | **✅ Auto-generates `.helix/style`** |
-| **Failure Recovery** | ⚠️ Retry | ✅ Checkpoints | **✅ Predictive Recovery** |
-| **Efficiency Scale** | 1x | 3x | **10x** |
+| **Style Learning** | ❌ None | ❌ Manual | **✅ Auto-generates `.helix/learned_rules.md`** |
+| **Failure Recovery** | ⚠️ Retry | ✅ Checkpoints | **✅ Agentic Self-Healing** |
 
 ---
 
@@ -57,9 +60,9 @@ Initialize HELIX in your project and watch it build a full SaaS prototype in one
 
 HELIX will:
 1. Spin up the **Meta-Planner** to break down the task.
-2. Route tasks to the **Swarm Execution** layer.
+2. Route tasks to the **Swarm Execution** layer (now with Prompt Caching!).
 3. Use the **Loop-Manager** to parallelize the work.
-4. Run the **Validator+Optimizer** to ensure quality.
+4. Run the **Validator+Optimizer** to ensure quality (with Auto-Healing).
 5. Trigger the **Evolver** to optimize future runs based on this execution.
 
 ---
@@ -72,13 +75,13 @@ HELIX operates on a 5-Level Hierarchical Swarm architecture:
 [ Level 1: Meta-Planner ]  --> Plans the holistic system and routes tasks.
           |
           v
-[ Level 2: Loop-Manager ]  --> Orchestrates parallel execution waves.
+[ Level 2: Loop-Manager ]  --> Orchestrates parallel execution waves with Context Compression.
           |
           v
-[ Level 3: Swarm Execution] -> Does the actual coding (Specialized sub-agents).
+[ Level 3: Swarm Execution] -> Does the actual coding via MCP and specific tools.
           |
           v
-[ Level 4: Validator ]     --> Tests, lints, and checks architectural integrity.
+[ Level 4: Validator ]     --> Tests, lints, checks architectural integrity, and Auto-Heals.
           |
           v
 [ Level 5: The Evolver ]   --> 🔥 The Magic: Rewrites its own rules for the next run.
@@ -119,13 +122,21 @@ After 5 runs in your codebase, HELIX will have perfectly adapted to your exact c
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Master Roadmap
 
-- [x] Hierarchical Swarm Execution
-- [x] Basic Self-Evolution Protocol
-- [x] Gemini & Claude Code Native Integration
-- [ ] Multi-Repository Context Sharing (Q2 2026)
-- [ ] Deep RL-based Cost Prediction (Q3 2026)
+We are aiming to be the undisputed #1 orchestration engine. See our full [ROADMAP.md](./ROADMAP.md) for details on how we are beating Conductor, Loki, and Superpowers.
+
+### Upcoming in v2.1 (Infrastructure Update)
+- [ ] Visual Terminal Dashboard (`helix-dashboard`)
+- [ ] Isolated Git Worktrees for true multi-agent collision safety
+- [ ] Advanced Hooks & Total Auto-Activation
+- [ ] Centralized Observability & Logging (`helix-logs`)
+
+### Upcoming in v3.0 (Ecosystem Update)
+- [ ] Persistent Vector DB Memory (Cross-Session)
+- [ ] Embedded Specialized Sub-Skills (TDD, Debugger, Reviewer)
+- [ ] Auto PR Creation + Adversarial Review
+- [ ] Universal Support (Cursor, Aider, Codex)
 
 ---
 

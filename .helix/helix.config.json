@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "project_name": "helix-initialized-project",
+  "execution": {
+    "default_model": "claude-3-7-sonnet",
+    "fast_model": "gemini-2.5-flash",
+    "max_parallel_waves": 5
+  },
+  "evolver": {
+    "enabled": true,
+    "auto_update_templates": true,
+    "learn_from_git_diffs": true
+  }
+}
