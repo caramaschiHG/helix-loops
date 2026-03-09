@@ -1,14 +1,31 @@
 {
-  "version": "1.0.0",
-  "project_name": "helix-initialized-project",
+  "version": "2.1.0",
+  "project_name": "helix-orchestrator",
   "execution": {
     "default_model": "claude-3-7-sonnet",
     "fast_model": "gemini-2.5-flash",
-    "max_parallel_waves": 5
+    "max_parallel_waves": 5,
+    "enable_prompt_caching": true,
+    "enable_mcp": true
   },
   "evolver": {
     "enabled": true,
     "auto_update_templates": true,
     "learn_from_git_diffs": true
+  },
+  "safety": {
+    "cost_ceiling_usd": 10.0,
+    "auto_healing_retries": 1,
+    "rollback_on_failure": true
+  },
+  "hooks": {
+    "enabled": true,
+    "pre_commit": {
+      "run_tests": true,
+      "auto_heal_on_fail": true
+    },
+    "post_merge": {
+      "auto_evolve": true
+    }
   }
 }
