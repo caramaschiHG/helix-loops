@@ -28,6 +28,7 @@ waves of parallel agents, predicts cost before spending, rolls back on failure,
 and **evolves its own templates after every run**.
 
 **New in v2.0:**
+- **Premium UX:** A beautiful, clean, and professional terminal experience.
 - **MCP (Model Context Protocol) Native:** Seamlessly plugs into external databases, GitHub, and custom APIs using MCP servers.
 - **Context Compression:** Prevents context rot by dynamically summarizing long-running execution states and storing them in local Vector memory.
 - **Prompt Caching:** Built-in support for Claude/Gemini prompt caching, cutting execution costs by up to 60%.
@@ -38,10 +39,37 @@ and **evolves its own templates after every run**.
 - Executing large refactors across many files/services
 - Running overnight batches where human supervision is minimal
 
-**Stop using HELIX when:**
-- Task takes < 30 minutes — use a single GSD phase instead
-- Cost estimate exceeds your hard ceiling and you decline
-- Project has no clear acceptance criteria
+---
+
+## 🎨 Premium UX & Interaction Design
+
+HELIX v2.0 mandates an extremely elegant, clean, and professional on-screen experience. The AI must format all communications using the standardized templates found in `templates/helix-elegant-messages.md`.
+
+### Core UI Principles:
+1. **Zero Noise:** Remove repetitive output, raw JSON dumps (unless requested), and conversational filler.
+2. **Elegant Markdown:** Use clean borders (`───`), consistent spacing, and structured sections.
+3. **Restrained Emojis:** Use emojis purposefully (e.g., 🔄, 📊, 💰, 🧠, 🛠️). Do not overuse them.
+4. **Calm Errors:** Errors should be helpful and reassuring, followed by safe rollbacks.
+5. **Brand Identity:** Always present the HELIX ASCII banner on initialization and include the "HELIX v2.0" footer on major state changes.
+
+### Initialization Banner (`/helix:init` or `/helix`)
+Always output this exact banner when starting:
+
+```text
+    __  __ ███████╗ ██╗      ██╗ ██╗  ██╗
+   / / / / ██╔════╝ ██║      ██║ ╚██╗██╔╝
+  / /_/ /  █████╗   ██║      ██║  ╚███╔╝ 
+ / __  /   ██╔══╝   ██║      ██║  ██╔██╗ 
+/_/ /_/    ███████╗ ███████╗ ██║ ██╔╝ ██╗
+           ╚══════╝ ╚══════╝ ╚═╝ ╚═╝  ╚═╝
+──────────────────────────────────────────────────────────
+ Hierarchical Evolutionary Loop — v2.0
+ Self-Evolving • Intelligent • Elegant
+──────────────────────────────────────────────────────────
+ Date: {{DATE}} | Project: {{PROJECT_NAME}}
+```
+
+*(See `templates/helix-elegant-messages.md` for Wave, Validator, Cost, and Evolver UI formats.)*
 
 ---
 
