@@ -1,11 +1,12 @@
 # ⚡ Installation Guide
 
-HELIX is designed to plug directly into your favorite AI CLI workflows.
+HELIX v2.0 is designed to plug directly into your favorite AI CLI workflows, transforming them into premium, self-evolving orchestrators.
 
 ## 📦 Requirements
-- Node.js >= 20 or Python >= 3.11 (depending on your CLI environment)
+- Node.js >= 20 or Python >= 3.11
 - **Claude Code** (latest version) OR **Gemini CLI** (latest version)
 - Git initialized in your project
+- *(Optional but recommended)* configured MCP servers
 
 ## 🚀 Installing on Gemini CLI
 
@@ -33,9 +34,9 @@ Navigate to your project folder and run:
 /helix:init
 ```
 
-This will create a `.helix/` directory containing:
-- `helix.config.json`
-- `templates/`
+This will create an elegant `.helix/` directory containing:
+- `helix.config.json` (Caching, MCP, and Model settings)
+- `templates/` (Auto-updating agent prompts)
 - `learned_rules.md` (This will start empty and grow over time!)
 
 ## 🔄 Updating After Self-Evolution
@@ -57,4 +58,4 @@ claude-code update caramaschiHG/helix-loops
 ## 🛠️ Troubleshooting
 
 - **Evolver isn't learning?** Ensure the `.helix` directory is committed to your repo so the agent has context across sessions.
-- **Out of context errors?** Use `/helix:status` to check the Loop-Manager's memory usage. The Swarm might need to flush its context window.
+- **Costs too high?** Ensure `enable_prompt_caching` is `true` in `helix.config.json`.

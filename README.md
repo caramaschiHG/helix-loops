@@ -9,13 +9,13 @@
            ╚══════╝ ╚══════╝ ╚═╝ ╚═╝  ╚═╝
 </pre>
 
-**The First Self-Evolving AI Skill for Claude Code and Gemini CLI**
+**Hierarchical Evolutionary Loop for Intelligent eXecution**
 
 [![GitHub stars](https://img.shields.io/github/stars/caramaschiHG/helix-loops?style=for-the-badge&color=ffd700)](https://github.com/caramaschiHG/helix-loops/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
+[![Version 2.0.0](https://img.shields.io/badge/version-2.0.0-success?style=for-the-badge)](https://github.com/caramaschiHG/helix-loops/releases)
 [![Compatible with: Claude Code & Gemini CLI](https://img.shields.io/badge/Compatible-Claude_Code_%7C_Gemini_CLI-blueviolet?style=for-the-badge&logo=anthropic)](https://github.com/caramaschiHG/helix-loops)
-[![MCP Ready](https://img.shields.io/badge/MCP-Native_Support-orange?style=for-the-badge)](https://modelcontextprotocol.io)
+[![MCP Native Support](https://img.shields.io/badge/MCP-Native_Support-orange?style=for-the-badge)](https://modelcontextprotocol.io)
 
 *Stop writing static prompts. Start building with an orchestrator that learns.*
 
@@ -25,30 +25,30 @@
 
 Welcome to the next generation of autonomous AI agents. If you've used **GSD** or **Ralph Loops**, you know the immense power of autonomous execution. But they share a fatal flaw: **they don't learn.** Every time you start a new loop, you start from zero.
 
-**HELIX** introduces the **Hierarchical Evolutionary Loop for Intelligent eXecution**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
+**HELIX v2.0** introduces the **Hierarchical Evolutionary Loop**. It's a 5-level orchestration system that not only executes complex multi-agent tasks but *rewrites its own templates, cost predictors, and style guides* based on how it performs in your specific codebase. 
 
-⚡ **v2.0 introduces native MCP integration, Prompt Caching, Agentic Healing, Context Compression, and a Premium CLI UX.**
+⚡ **Now featuring native MCP integration, Prompt Caching (-60% cost), Agentic Self-Healing, Context Compression, and a Premium CLI UX.**
 
 ---
 
-## 🥊 Why HELIX? (The Evolution of Loops)
+## 🥊 The Evolution of Loops (Why HELIX?)
 
 | Feature | 🐢 GSD | 🚀 Ralph Loops | 🧬 **HELIX v2.0** |
 | :--- | :---: | :---: | :---: |
-| **Execution Style** | Sequential | Parallel Waves | **Hierarchical Swarm** |
+| **Execution Architecture** | Sequential | Parallel Waves | **Hierarchical Swarm** |
 | **Self-Evolution** | ❌ No | ❌ No | **✅ Yes (Level 5 Evolver)** |
 | **MCP Integration** | ❌ No | ❌ No | **✅ Native Support** |
 | **Cost Efficiency** | Standard | Standard | **✅ Prompt Caching Built-in (-60% cost)** |
 | **Model Routing** | ❌ Fixed | ❌ Fixed | **✅ Dynamic (Cost vs Quality)** |
 | **Style Learning** | ❌ None | ❌ Manual | **✅ Auto-generates `.helix/learned_rules.md`** |
 | **Failure Recovery** | ⚠️ Retry | ✅ Checkpoints | **✅ Agentic Self-Healing** |
-| **CLI Experience** | Basic | Basic | **✅ Premium Dashboard & ASCII UX** |
+| **CLI Experience** | Basic | Basic | **✅ Premium Dashboard & Elegant UX** |
 
 ---
 
 ## ⚡ 10-Second Install
 
-Install directly via your favorite CLI (make sure you have the latest versions):
+Install directly via your favorite CLI:
 
 **For Gemini CLI:**
 ```bash
@@ -70,18 +70,18 @@ Initialize HELIX in your project and watch it build a full SaaS prototype in one
 /helix:init "Build a full-stack Next.js SaaS with Stripe billing and Supabase auth"
 ```
 
-> **What happens next?**
-> 1. 🧠 **Meta-Planner:** Breaks down the task.
-> 2. ⚡ **Loop-Manager:** Schedules parallel waves and compresses context.
-> 3. 🛠️ **Swarm Execution:** Multiple agents code simultaneously (using MCP tools!).
-> 4. 🛡️ **Validator:** Tests the code. If it fails, the *Agentic Healer* kicks in to fix it.
+> **The HELIX Workflow:**
+> 1. 🧠 **Meta-Planner:** Analyzes context via Compression and breaks down the task.
+> 2. ⚡ **Loop-Manager:** Schedules parallel waves leveraging Prompt Caching.
+> 3. 🛠️ **Swarm Execution:** Multiple agents code simultaneously, reading data via MCP tools.
+> 4. 🛡️ **Validator:** Tests the code. If it fails, the *Agentic Healer* kicks in autonomously.
 > 5. 🔥 **Evolver:** Optimizes future runs based on this exact execution.
 
 ---
 
-## 🏗️ Core Architecture
+## 🏗️ Core Architecture (The 5 Levels)
 
-HELIX Abandons the traditional loop for a **5-Level Hierarchical Swarm**:
+HELIX abandons the traditional loop for a **5-Level Hierarchical Swarm**:
 
 ```ascii
 [ Level 1: Meta-Planner ]  --> Plans the holistic system and routes tasks.
@@ -99,7 +99,7 @@ HELIX Abandons the traditional loop for a **5-Level Hierarchical Swarm**:
 [ Level 5: The Evolver ]   --> 🔥 The Magic: Rewrites its own rules for the next run.
 ```
 
-*See [ARCHITECTURE.md](./ARCHITECTURE.md) for a deep dive into the swarm.*
+*See [ARCHITECTURE.md](./ARCHITECTURE.md) for a deep dive into the swarm mechanics.*
 
 ---
 
@@ -117,18 +117,7 @@ After 5 runs in your codebase, HELIX will have perfectly adapted to your exact c
 
 ## 💎 Premium CLI Experience
 
-HELIX v2.0 isn't just smart; it's beautiful. We've replaced noisy, scary JSON dumps with an elegant, terminal-native UI.
-
-```text
-🔄 WAVE 2/5 • Swarm Execution
-──────────────────────────────────────────────────────────
- Spawning isolated worktrees...
- ├─ Agent 1 (UI): Running in background
- ├─ Agent 2 (API): Running in background
- └─ Agent 3 (DB): Completed in 45s
-
- Status: Waiting for remaining agents...
-```
+HELIX v2.0 isn't just smart; it's beautiful. We've replaced noisy, scary JSON dumps with an elegant, terminal-native UI. All outputs feature clean borders, minimal elegant emojis, and precise status updates. 
 
 Run `/helix:status` anytime to see a gorgeous real-time dashboard of your swarm's progress and token costs.
 
@@ -142,14 +131,6 @@ Run `/helix:status` anytime to see a gorgeous real-time dashboard of your swarm'
 - `/helix:predict [prompt]` - Simulate a run to get a cost and time estimate.
 
 *Check out [USAGE.md](./USAGE.md) for real-world examples.*
-
----
-
-## 🎥 Demo
-
-*Watch how HELIX builds a 10-page SaaS app and then rewrites its own coding style guide based on the output.*
-
-[![HELIX 60s Demo Placeholder](https://img.shields.io/badge/Watch_Demo-Coming_Soon-red?style=for-the-badge&logo=youtube)](#) *(60s Loom coming soon)*
 
 ---
 

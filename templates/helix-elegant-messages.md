@@ -32,6 +32,8 @@ Do not use noisy logs. Use this clean format for all state changes, wave transit
  Context: Compressed to {{COMPRESSION_PERCENT}}% of original size.
  Cost Prediction: ${{COST}} ({{CACHE_PERCENT}}% cached)
  Progress: {{PROGRESS_PERCENT}}% • ETA: {{ETA_MINS}}m {{ETA_SECS}}s
+ 
+ HELIX v2.0 • caramaschiHG
 ```
 
 ### Swarm Execution (Level 3)
@@ -56,6 +58,8 @@ Do not use noisy logs. Use this clean format for all state changes, wave transit
  Agentic Healing triggered...
  └─ Micro-agent spawned to resolve issue.
  ✅ Healing successful. Proceeding to merge.
+ 
+ HELIX v2.0 • caramaschiHG
 ```
 
 ### Cost Summary (End of Wave)
@@ -66,6 +70,8 @@ Do not use noisy logs. Use this clean format for all state changes, wave transit
  Spent This Wave: ${{WAVE_SPEND}}
  Total Spent: ${{TOTAL_SPENT}} ({{BUDGET_PERCENT}}% of budget)
  Cache Savings: ${{SAVED_AMOUNT}} saved via Prompt Caching
+ 
+ HELIX v2.0 • caramaschiHG
 ```
 
 ## 3. The Evolver Final Report (Level 5)
@@ -84,7 +90,7 @@ When the execution completes, present the evolution report elegantly.
 
  HELIX is now permanently smarter for this repository.
  
- HELIX v2.0 • Ready for next command.
+ HELIX v2.0 • caramaschiHG
 ```
 
 ## 4. Calm Error Handling
@@ -99,5 +105,5 @@ When something goes wrong and cannot be healed, do not panic the user. Provide a
  
  Recommendation: {{ACTIONABLE_ADVICE}}
  
- HELIX v2.0 • Awaiting user instruction.
+ HELIX v2.0 • caramaschiHG
 ```

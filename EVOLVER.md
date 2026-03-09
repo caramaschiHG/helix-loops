@@ -2,17 +2,17 @@
 
 Traditional AI loops are static. You write a `rules.md` or a `prompt.txt`, and the agent follows it blindly. Over time, as your codebase shifts, those rules become outdated, leading to context rot and frustrating hallucinations.
 
-HELIX solves this with **The Evolver (Level 5)**.
+HELIX v2.0 solves this permanently with **The Evolver (Level 5)**.
 
 ## 🧠 How it Works
 
-The Evolver is an autonomous meta-agent that runs after a task is completed (specifically, after code is merged by the Validator). 
+The Evolver is an autonomous meta-agent that runs after a task is completed. 
 
-It operates in 3 steps:
+It operates in 3 distinct steps:
 
-1. **Diff Analysis:** It looks at the delta between what the Swarm Execution layer initially proposed and what was finally accepted (including manual human edits!).
+1. **Diff Analysis:** It looks at the delta between what the Swarm Execution layer initially proposed and what was finally accepted (including Agentic Healing patches and manual human edits!).
 2. **Pattern Recognition:** It identifies recurring anti-patterns, style violations, or inefficient library usage.
-3. **Self-Modification:** It physically edits the files inside `.helix/` (like `learned_rules.md`, `style_guide.md`, and `cost_predictor.json`).
+3. **Self-Modification:** It physically edits the files inside `.helix/` (like `learned_rules.md`, `templates/`, and `helix.config.json`).
 
 ## 🎨 Learning Your Coding Style
 
@@ -27,15 +27,9 @@ It will autonomously append to `.helix/learned_rules.md`:
 
 ## 🔄 What gets updated automatically?
 
-1. **Templates:** Prompt injections used by the Swarm Execution agents.
-2. **Cost-Predictor:** Adjusts estimated token usage based on real-world latency and token counts from your specific API keys.
-3. **Routing Rules:** If `flash` models consistently fail at complex SQL queries in your repo, the Evolver will update the routing table to always use a `pro` or `sonnet` model for database tasks.
+1. **Learned Rules:** Project-specific architectural constraints.
+2. **Templates:** Swarm execution prompts are honed for your specific context.
+3. **Cost-Predictor:** Adjusts estimated token usage based on real-world latency and caching hit rates (Prompt Caching).
+4. **Routing Rules:** Dynamically adjusts which model handles which task based on historical success rates.
 
-## 📈 Example: Evolution After 5 Runs
-
-**Run 1:** HELIX builds a UI component but uses standard CSS. Human corrects to Tailwind.
-**Run 2:** HELIX uses Tailwind, but uses v3 syntax. Human corrects to v4.
-**Run 3:** HELIX uses Tailwind v4 perfectly. Human is happy.
-**Run 4 & 5:** HELIX consistently applies Tailwind v4 with perfect accuracy, zero human intervention.
-
-*The loop isn't just executing; it's adapting.*
+The orchestrator adapts. HELIX v2.0 gets 1% smarter every single time it runs.

@@ -11,17 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Planned:** Advanced Hooks & Total Auto-Activation
 - **Planned:** Centralized Observability & Logging (`helix-logs`)
 
-## [v2.0.0] - March 2026
+## [v2.0.0] - March 2026 (The Premium & Intelligence Update)
 
-### Added (The "Best Currently" Update)
+### Added (Market-Dominating Features)
+- **Premium UX Redesign:** Utterly elegant terminal UI. Noisy logs replaced with clean ASCII banners, markdown borders, and calm, professional messaging templates.
 - **MCP Native Integration:** Swarm Execution (Level 3) agents now automatically bind to Model Context Protocol (MCP) servers (Postgres, GitHub, Linear, etc.) for zero-hallucination data gathering.
 - **Prompt Caching:** Loop-Manager now utilizes provider-level prompt caching, reducing token costs by up to 60% on long-running waves.
 - **Agentic Healing:** Validator (Level 4) no longer immediately rolls back on test failure. It now spawns a micro-agent to attempt an autonomous code fix (self-healing) before retreating.
 - **Context Compression:** Prevents context window rot. Meta-Planner generates lightweight `summarized_state.md` vectors instead of passing massive git histories to every child node.
 
 ### Changed
+- All CLI output templates standardized via `templates/helix-elegant-messages.md`.
 - Refined `/helix:init` to automatically detect if `.helix/helix.config.json` is using outdated v1 keys and gracefully upgrade them.
-- Updated default Swarm Agent template to respect new `safety` boundaries.
 
 ## [v1.0.0] - March 2026
 
@@ -32,8 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Level 3 Swarm Execution:** Concurrent, isolated agent execution.
 - **Level 4 Validator + Optimizer:** Pre-commit architectural integrity checks.
 - **Level 5 The Evolver:** 🔥 First-of-its-kind self-modifying codebase logic. Analyzes diffs and rewrites its own `.helix/learned_rules.md`.
-- **CLI Integrations:** Full native support for Gemini CLI and Claude Code via `/helix` commands.
-- **Commands:** `/helix:init`, `/helix:status`, `/helix:evolve`, and `/helix:predict`.
 
 ---
 *Maintained by [@caramaschiHG](https://github.com/caramaschiHG)*
